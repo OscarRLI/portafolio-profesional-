@@ -1,0 +1,95 @@
+body {
+background: 
+    linear-gradient(
+    45deg,
+    transparent 33.33%,
+    rgba(57, 144, 179, 0.1) 33.33%,
+    rgba(0, 0, 0, 0.1) 66.66%,
+    transparent 66.66%
+    ),
+    #653e15;
+color: white;
+font-family: Arial, sans-serif;
+min-height: 100vh;
+padding-top: 40px;
+padding-bottom: 40px;
+}
+
+h1 {
+text-align: center;
+margin-bottom: 40px;
+font-weight: 700;
+text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+/* Tarjetas personalizadas */
+.card-custom {
+background-color: #472c0f;
+border: 3px solid black;
+color: aliceblue;
+box-shadow: 0 0 10px rgba(0,0,0,0.7);
+transition: transform 0.3s ease;
+min-height: 160px;
+}
+
+.card-custom:hover {
+transform: translateY(-8px);
+box-shadow: 0 8px 20px rgba(0,0,0,0.9);
+}
+
+.card-title {
+font-weight: bold;
+font-size: 1.25rem;
+}
+
+.card-text {
+text-align: justify;
+}
+
+
+/* Botón Go Back estilo personalizado */
+.go-back-btn {
+position: fixed;
+top: 20px;
+left: 20px;
+  background-color: #d09750; /* tono que combina con tu esquema */
+color: white;
+font-size: 1rem;
+font-weight: 600;
+padding: 10px 16px;
+border: 3px solid black;
+border-radius: 12px;
+cursor: pointer;
+display: flex;
+align-items: center;
+gap: 10px;
+z-index: 999;
+transition: background-color 0.3s ease, transform 0.3s ease;
+box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.go-back-btn:hover {
+background-color: #aa7732;
+transform: translateY(-2px);
+}
+
+/* Fondo animado del ícono */
+.go-back-icon {
+  background-color: #f9db8b;  /* amarillo tenue que resalta */
+padding: 6px;
+border-radius: 8px;
+display: grid;
+place-items: center;
+transition: background-color 0.3s ease;
+}
+
+/* Ícono SVG */
+.go-back-icon svg {
+display: block;
+}
+
+/* Texto */
+.go-back-text {
+white-space: nowrap;
+font-weight: bold;
+}

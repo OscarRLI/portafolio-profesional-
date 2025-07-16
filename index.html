@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PORTAFOLIO PROFESIONAL</title>
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<!-- Estilos personalizados -->
+<link rel="stylesheet" href="estilos.css" />
+</head>
+<body class="bg-dark text-white">
+
+<!-- HEADER -->
+<header class="text-center py-5 position-relative">
+    <!-- Foto perfil -->
+    <img 
+    src="imagenes/foto 1.jpeg" 
+    alt="Perfil" 
+    class="rounded-circle border border-5 border-warning mb-3" 
+    style="width: 200px; margin-top: -80px;"
+    />
+    <h1>Oscar Rommel Lopez Ibarra</h1>
+    <p><strong>INGENIERO DE SISTEMAS</strong></p>
+    <div class="text-center mt-3">
+    <button id="openModal" class="btn btn-outline-warning">
+    Contáctame
+    </button>
+</div>
+
+<!-- Modal -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Contáctame</h2>
+    <form action="https://formsubmit.co/rommellopezibarra@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Tu nombre" required>
+    <input type="email" name="email" placeholder="Tu correo" required>
+    <textarea name="message" placeholder="Tu mensaje" required></textarea>
+    <button type="submit" class="btn-enviar">Enviar</button>
+    </form>
+    </div>
+</div>
+
+</header>
+
+<!-- CONTENEDOR PRINCIPAL -->
+<main class="container py-4">
+    <div class="row gx-4">
+
+    <!-- SIDEBAR -->
+    <aside class="col-lg-4 mb-4">
+        <div class="p-3 rounded" id="sidebar-bg">
+        <h3>PERFIL</h3>
+        <hr />
+        <p class="mb-3">
+            <strong>Ingeniero de Sistemas en formación con experiencia en automatización de procesos, ciberseguridad y desarrollo de soluciones tecnológicas. Apasionado por la innovación, el aprendizaje constante y la mejora continua. Actualmente enfocado en seguridad informática, especialmente en gobernanza y cumplimiento (GRC)</strong>
+        </p>
+        <p>
+            <strong>OBJETIVO PROFESIONAL</strong><br /><br />
+            Consolidarme como profesional en ciberseguridad con enfoque en GRC, aportando valor a empresas a través de buenas prácticas, auditorías y soluciones tecnológicas seguras.
+        </p>
+        <hr />
+        </div>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL BOTONES -->
+    <section class="col-lg-8">
+    <div class="row g-3">
+        <!-- Botón Educación -->
+        <div class="col-6 d-flex">
+        <a href="educacion.html" class="btn btn-warning flex-fill" style="min-height: 150px; font-size: 1.2rem; display: flex; justify-content: center; align-items: center;">
+            EDUCACIÓN
+        </a>
+        </div>
+
+        <!-- Botón Enfoque -->
+        <div class="col-6 d-flex">
+        <a href="enfoque.html" class="btn btn-warning flex-fill" style="min-height: 150px; font-size: 1.2rem; display: flex; justify-content: center; align-items: center;">
+            ENFOQUE
+        </a>
+        </div>
+
+        <!-- Botón Proyectos -->
+        <div class="col-6 d-flex">
+        <a href="proyectos.html" class="btn btn-warning flex-fill" style="min-height: 150px; font-size: 1.2rem; display: flex; justify-content: center; align-items: center;">
+            PROYECTOS
+        </a>
+        </div>
+
+        <!-- Botón Experiencia -->
+        <div class="col-6 d-flex">
+        <a href="experiencia.html" class="btn btn-warning flex-fill" style="min-height: 150px; font-size: 1.2rem; display: flex; justify-content: center; align-items: center;">
+            EXPERIENCIA
+        </a>
+        </div>
+    </div>
+    </section>
+
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white py-4 px-3 d-flex flex-wrap justify-content-between gap-4">
+    <!-- Social Media -->
+    <div class="flex-fill" style="min-width: 150px;">
+    <p>SOCIAL MEDIA</p>
+    <ul class="list-unstyled">
+        <li class="mb-2">
+        <a href="https://www.linkedin.com/in/oscar-l%C3%B3pez-301373368/" target="_blank" class="btn btn-outline-light w-100">
+            LinkedIn
+        </a>
+        </li>
+        <li class="mb-2">
+        <a href="https://github.com/OscarRLI" target="_blank" class="btn btn-outline-light w-100">
+            GitHub
+        </a>
+        </li>
+    </ul>
+    </div>
+
+    <!-- Contacto -->
+    <div class="flex-fill" style="min-width: 150px;">
+    <p>CONTACT</p>
+    <ul class="list-unstyled">
+        <li>Telefono: 935595227</li>
+        <li>Dirección: Los Olivos, Lima, Perú</li>
+        <li>Gmail: rommellopezibarra@gmail.com</li>
+    </ul>
+    </div>
+
+    <!-- Recursos -->
+    <div class="flex-fill" style="min-width: 150px;">
+    <p>RESOURCES</p>
+    <ul class="list-unstyled">
+        <li>Blog</li>
+        <li>Información adicional</li>
+    </ul>
+    </div>
+</footer>
+    <!--javascript-->
+<script>
+const modal = document.getElementById("contactModal");
+const btn = document.getElementById("openModal");
+const span = document.querySelector(".modal .close");
+
+btn.onclick = () => modal.style.display = "block";
+span.onclick = () => modal.style.display = "none";
+window.onclick = (e) => { if (e.target == modal) modal.style.display = "none"; };
+</script>
+
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<!-- ENTREGA FINAL  -->
+<!-- VENTANAS MODALES  -->
+<!-- FORMULARIO DE CONTACTO  -->
+<!-- TABLA DE REDIRECCIÓN A PROYECTOS PERSONALES  -->
+
+

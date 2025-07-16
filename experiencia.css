@@ -1,0 +1,95 @@
+/* Fondo general */
+body {
+    background-color: #0d0d0d; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Título principal */
+h1 {
+    font-weight: bold;
+    color: #f8f9fa; 
+}
+
+/* Tarjetas de experiencia */
+.experiencia {
+    background-color: #2e2e2e; 
+    border: none;
+    border-radius: 12px;
+    color: #f1f1f1; /* Texto claro */
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover para las tarjetas */
+.experiencia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px whitesmoke;
+}
+
+/* Títulos dentro de las tarjetas */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffc107; /* Color ámbar (dorado) para resaltar */
+}
+
+/* Subtítulos */
+.card-subtitle {
+    font-size: 0.95rem;
+    color: rgba(0, 255, 55, 0); 
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+}
+
+/* Párrafos de texto */
+.card-text {
+    font-size: 1rem;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+/* Botón volver estilo personalizado */
+.go-back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #d09750; 
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 16px;
+    border: 3px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 999;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.go-back-btn:hover {
+    background-color: #aa7732;
+    transform: translateY(-2px);
+}
+
+/* Fondo animado del ícono */
+.go-back-icon {
+    background-color: #f9db8b;  /* amarillo tenue que resalta */
+    padding: 6px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Ícono SVG */
+.go-back-icon svg {
+    display: block;
+}
+
+/* Texto */
+.go-back-text {
+    white-space: nowrap;
+    font-weight: bold;
+}
