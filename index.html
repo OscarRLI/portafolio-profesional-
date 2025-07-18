@@ -17,7 +17,7 @@
 <header class="text-center py-5 position-relative">
     <!-- Foto perfil -->
     <img 
-    src="foto 1.jpeg" 
+    src="imagenes/foto 1.jpeg" 
     alt="Perfil" 
     class="rounded-circle border border-5 border-warning mb-3" 
     style="width: 200px; margin-top: -80px;"
@@ -33,16 +33,24 @@
 <!-- Modal -->
 <div id="contactModal" class="modal">
     <div class="modal-content">
-    <span class="close">&times;</span>
+        <span class="close">&times;</span>
     <h2>Contáctame</h2>
-    <form action="https://formsubmit.co/osroloib@gmail.com" method="POST">
-    <input type="text" name="name" placeholder="Tu nombre" required>
-    <input type="email" name="email" placeholder="Tu correo" required>
-    <textarea name="message" placeholder="Tu mensaje" required></textarea>
-    <button type="submit" class="btn-enviar">Enviar</button>
-    </form>
+
+    <!-- Utilizamos Formspree para vincular el formulario a mi correo personal -->
+        <form action="https://formspree.io/f/mvgqgajy" method="POST">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo" required>
+            <textarea name="message" placeholder="Tu mensaje" required></textarea>
+
+    <!-- Opcionales ocultos -->
+            <input type="hidden" name="_subject" value="TE LLEGO UNA CORREO DE CONTACTO DESDE TU PORTAFOLIO">
+            <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit" class="btn-enviar btn btn-warning mt-3">Enviar</button>
+        </form>
     </div>
 </div>
+
 
 </header>
 
@@ -157,9 +165,8 @@ window.onclick = (e) => { if (e.target == modal) modal.style.display = "none"; }
 </body>
 </html>
 
-<!-- ENTREGA FINAL  -->
-<!-- VENTANAS MODALES  -->
-<!-- FORMULARIO DE CONTACTO  -->
-<!-- TABLA DE REDIRECCIÓN A PROYECTOS PERSONALES  -->
+
+
+
 
 
